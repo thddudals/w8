@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="webstoryboy">
+        <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
+        <meta name="keywords" content="웹스토리보이, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, html5, html4, css3, html, markup, design">
+        <title>CSS</title>
+        <!-- web_font -->
+        <link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' rel='stylesheet' type='text/css' />
+        <!-- css -->
+        <link href="../assets/css/bootstrapTheme.css" rel="stylesheet">
+        <link href="../assets/css/custom.css" rel="stylesheet">
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../../responsive/res/assets/css/font-awesome.css" rel="stylesheet">
+        <!-- Prettify -->
+        <link href="../assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        <!-- Icon -->
+        <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+        <link rel="apple-touch-icon" href="../assets/ico/icon_57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/ico/icon_114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/ico/icon_72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/ico/icon_144.png">
+        <!-- hmlt5 support -->
+        <!--[if lt IE 9]><script src="../assets/js/html5shiv.js"></script><![endif]-->
+        <!-- IE6,7 support -->
+        <!--[if lte IE 7]><link rel="stylesheet" href="comm/css/ie7.css" type="text/css" ><![endif]-->
+        <!--[if IE 8]><link rel="stylesheet" href="comm/css/ie8.css" type="text/css" ><![endif]-->
+        <!--[if lte IE 6]>
+        <p style="font-size: 12px; color: #fff; background: #2885b0; padding:5px 0; margin: 0; text-align: center">
+                사용하고 계신 브라우저는 최신 웹 브라우저가 아닙니다. 업그레이드를 하거나 다른 최신 브라우저 사용을 권장합니다.
+                <a href="http://www.microsoft.com/korea/ie" target="_blank" >업그레이드,</a>
+                <a href="http://www.mozilla.or.kr/ko/" target="_blank">파이어폭스,</a>
+                <a href="http://kr.opera.com/download/" target="_blank">오페라,</a>,
+                <a href="http://support.apple.com/kb/DL1531?viewlocale=ko_KR&locale=ko_KR" target="_blank">사파리,</a>
+                <a href="http://www.google.com/chrome?hl=ko" target="_blank">크롬</a></p>
+            <![endif]-->
+            <style>
+            .face {display:block; margin:20px auto; width:400px; }
+            .face img {width:400px; border-radius:50%; }
+            .face1 img {width:22%; border-radius:10%; margin:1%;}
+            .member {margin:50px 0;}
+            .member li {width:150px; list-style:none; display:inline-block; margin:6px; }
+            .member li img { border-radius:50%;}
+            table em {border: 1px solid #000; font-style: normal; font-size: 80%; padding: 3px; border-radius: 3px; background:#fff; color: #333;}
+            </style>
+        </head>
+        <body>
+            <!-- nav -->
+            <div id="top-nav" class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right">
+                                <li><a htef="https://thddudals12.dothome.co.kr" target="_blank">Songbass</li>
+                                 <li><a htef="https://sym-0804.tistory.com/" target="_blank">Songbass</li>   
+                        
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //nav -->
+            <!-- header -->
+            <div id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12" style="text-align:center;">
+                            <div class="header_tit">
+                                <h1>CSS에 대한 설명입니다</h1>
+                                <h2><a href="http://thddudals12.dothome.co.kr/">thddudals12.dothome.co.kr</a></h2>
+                            </div>
+                            <div class="header_icon">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-adjust" aria-hidden="true"></i><span>HTML</span></a></li>
+                                    <li><a href="#"><i class="fa fa-truck" aria-hidden="true"></i><span>CSS3</span></a></li>
+                                    <li><a href="#"><i class="fa fa-paper-plane-o" aria-hidden="true"></i><span>codepen</span></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope-open-o" aria-hidden="true"></i><span>github</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //header -->
+            <!-- contents -->
+            <div class="container" style="margin-top:20px;">
+                <div class="row-fluid">
+                    <div class="span12">
+                        
+                        <h1>CSS</h1>
+                        
+                        <h2>CSS</h2>
+                        <p>CSS(Cascading style sheets)는 HTML을 꾸며주는 디자인 언어 스타일시트입니다.</p>
+                        <br>
+                        
+                        <h2>CSS 선택자</h2>
+                        <p class="well">선택자를 통하여 요소를 선택하고 속성을 줄 수 있습니다.</p>
+                        <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th>태그</th>
+                <th>유형</th>
+                <th>설명</th>
+                <th  class="ce">버전</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>.</td>
+                <td>.class {color:#fff;}</td>
+                <td>클래스 선택자</td>
+                <td class="ce">CSS1</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>.id {color:#fff;}</td>
+                <td>아이디 선택자</td>
+                <td class="ce">CSS1</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>* {color:#fff;}</td>
+                <td>전체 선택자</td>
+                <td class="ce">CSS2</td>
+            </tr>
+            <tr>
+                <td>element</td>
+                <td>p {color:#fff;}</td>
+                <td>요소 선택자</td>
+                <td class="ce">CSS1</td>
+            </tr>
+            <tr>
+                <td>element, element</td>
+                <td>p, div {color:#fff;}</td>
+                <td>그룹 선택자</td>
+                <td class="ce">CSS1</td>
+            </tr>
+            <tr>
+                <td>element element</td>
+                <td>div p {color:#fff;}</td>
+                <td>후손 선택자</td>
+                <td class="ce">CSS1</td>
+            </tr>
+            <tr>
+                <td>element &gt; element</td>
+                <td>div &gt; p {color:#fff;}</td>
+                <td>이웃 선택자</td>
+                <td class="ce">CSS2</td>
+            </tr>
+            <tr>
+                <td>element + element</td>
+                <td>div &gt; p {color:#fff;}</td>
+                <td>자식 선택자</td>
+                <td class="ce">CSS2</td>
+            </tr>
+            <tr>
+                <td>element ~ element</td>
+                <td>div ~ p {color:#fff;}</td>
+                <td>형제 선택자</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>[attribute]</td>
+                <td>p [class] {color:#fff;}</td>
+                <td>속성 선택자</td>
+                <td class="ce">CSS2</td>
+            </tr>
+            <tr>
+                <td>[attribute=value]</td>
+                <td>p [class="white"] {color:#fff;}</td>
+                <td>속성 선택자</td>
+                <td class="ce">CSS2</td>
+            </tr>
+            <tr>
+                <td>[attribute~=value]</td>
+                <td>p [class~="white"] {color:#fff;}</td>
+                <td>속성 선택자</td>
+                <td class="ce">CSS2</td>
+            </tr>
+            <tr>
+                <td>[attribute^=value]</td>
+                <td>p [attr^="w"] {color:#fff;}</td>
+                <td>속성 선택자</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>[attribute*=value]</td>
+                <td>p [attr*="white"] {color:#fff;}</td>
+                <td>속성 선택자</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>[attribute$=value]</td>
+                <td>p [attr$="w"] {color:#fff;}</td>
+                <td>속성 선택자</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:link</td>
+                <td>a:link {color:#fff;}</td>
+                <td>방문하지 않은 링크</td>
+                <td class="ce">CSS1</td>
+            </tr>
+            <tr>
+                <td>:visited</td>
+                <td>a:visited {color:#fff;}</td>
+                <td>방문한 링크</td>
+                <td class="ce">CSS1</td>
+            </tr>
+            <tr>
+                <td>:hover</td>
+                <td>a:hover {color:#fff;}</td>
+                <td>마우스 오버 링크</td>
+                <td class="ce">CSS1</td>
+            </tr>
+            <tr>
+                <td>:active</td>
+                <td>a:active {color:#fff;}</td>
+                <td>활성화된 링크</td>
+                <td class="ce">CSS1</td>
+            </tr>
+            <tr>
+                <td>:focus</td>
+                <td>a:focus {color:#fff;}</td>
+                <td>포커스된 링크</td>
+                <td class="ce">CSS2</td>
+            </tr>
+            <tr>
+                <td>:root</td>
+                <td>a:root {color:#fff;}</td>
+                <td>문서의 루트 요소</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:nth-child(n)</td>
+                <td>p:nth-child(3) {color:#fff;}</td>
+                <td>n번째 스타일 적용</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:nth-last-child(n)</td>
+                <td>p:nth-last-child(n) {color:#fff;}</td>
+                <td>끝에서 n번째 스타일 적용</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:nth-of-type(n)</td>
+                <td>p:nth-of-type(n) {color:#fff;}</td>
+                <td>n번째 스타일 적용</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:nth-last-of-type(n)</td>
+                <td>p:nth-last-of-type(n) {color:#fff;}</td>
+                <td>끝에서 n번째 스타일 적용</td>
+                <td class="ce">CSS3</td>
+            </tr>
+
+            <tr>
+                <td>::first-letter</td>
+                <td>p::first-letter {color:#fff;}</td>
+                <td>첫 번째 문장</td>
+                <td class="ce">CSS1</td>
+            </tr>
+            <tr>
+                <td>::first-line</td>
+                <td>p::first-line {color:#fff;}</td>
+                <td>첫 번째 줄</td>
+                <td class="ce">CSS1</td>
+            </tr>
+
+            <tr>
+                <td>:first-of-type</td>
+                <td>p:first-of-type {color:#fff;}</td>
+                <td>첫 번째 요소의 선택자</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:last-of-type</td>
+                <td>p:last-of-type {color:#fff;}</td>
+                <td>마지막 번째 요소의 선택자</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:only-of-type</td>
+                <td>p:only-of-type {color:#fff;}</td>
+                <td>해당 요소가 유일한 요소의 선택자</td>
+                <td class="ce">CSS3</td>
+            </tr>
+
+            <tr>
+                <td>:first-child</td>
+                <td>p:first-child {color:#fff;}</td>
+                <td>첫 번째 자식요소</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:last-child</td>
+                <td>p:last-child {color:#fff;}</td>
+                <td>마지막 자식요소</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:only-child</td>
+                <td>p:only-child {color:#fff;}</td>
+                <td>자식요소가 유일하게 하나일 때</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:only-of-child</td>
+                <td>p:only-of-child {color:#fff;}</td>
+                <td>해당 요소가 유일한 요소 일 때</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:target</td>
+                <td>:target {color:#fff;}</td>
+                <td>연결</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:enabled</td>
+                <td>input[type="text"]:enabled {color:#fff;}</td>
+                <td>사용할 수 있는 상태</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:disabled</td>
+                <td>input[type="text"]:disabled {color:#fff;}</td>
+                <td>사용할 수 없는 상태</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:checked</td>
+                <td>input:checked {color:#fff;}</td>
+                <td>체크된 상태</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:in-range</td>
+                <td>input:in-range {color:#fff;}</td>
+                <td>인풋 요소의 라인을 설정합니다.</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:out-of-range</td>
+                <td>input:out-of-range {color:#fff;}</td>
+                <td>인풋 요소의 아웃라인을 설정합니다.</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:valid</td>
+                <td>input:valid {color:#fff;}</td>
+                <td>인풋 요소가 유효할 때 설정됩니다.</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:invalid</td>
+                <td>input:invalid {color:#fff;}</td>
+                <td>인풋 요소가 유효하지 않을 때 설정됩니다.</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:optional</td>
+                <td>input:optional {color:#fff;}</td>
+                <td>인풋 요소의 옵션에 설정됩니다.</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:read-only</td>
+                <td>input:read-only {color:#fff;}</td>
+                <td>인풋 요소를 읽었을 때 설정됩니다.</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:read-write</td>
+                <td>input:read-write {color:#fff;}</td>
+                <td>인풋 요소를 쓸 때 설정됩니다.</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:input:required</td>
+                <td>input:required {color:#fff;}</td>
+                <td>인풋 요소가 필수 일 때 설정됩니다.</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:lang(language)</td>
+                <td>p:lang(it) {color:#fff;}</td>
+                <td>언어설정에 따라 설정됩니다.</td>
+                <td class="ce">CSS2</td>
+            </tr>
+            <tr>
+                <td>:empty</td>
+                <td>p:empty {color:#fff;}</td>
+                <td>빈 상태</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>::before</td>
+                <td>p::before {content: "content";}</td>
+                <td>요소 앞에 내용 추가</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>::after</td>
+                <td>p::after {content: "content";}</td>
+                <td>요소 뒤에 내용 추가</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>::selection</td>
+                <td>::selection {color:#fff;}</td>
+                <td>마우스로 선택했을 때</td>
+                <td class="ce">CSS3</td>
+            </tr>
+            <tr>
+                <td>:not(seletor)</td>
+                <td>:not(p) {color:#fff;}</td>
+                <td>제외한</td>
+                <td class="ce">CSS3</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+                        <ul>
+                            <li>id 선택자
+                                <ul>
+                                    <li>하나의 태그만 식별하기 위한 선택자입니다.</li>
+                                    <li>하나의 태그에 하나만 사용할 수 있습니다.</li>
+                                    <li>"#"으로 표시합니다.</li>
+                                </ul>
+                            </li>
+                            <li>class 선택자
+                                <ul>
+                                    <li>여러개의 태그를 식별하기 위한 선택자입니다.</li>
+                                    <li>하나의 태그에 여러개를 사용할 수 있습니다.</li>
+                                    <li>"."으로 표시합니다</li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                        <br>
+                        
+                        <h2>float으로 인한 영역 깨짐 방지법</h2>
+                        <p class="well">float을 사용하면 height 값을 0으로 인식합니다.</p>
+                        <ol>
+                            <li>깨지는 영역에 똑같이 float을 사용합니다. (x) 모든영역에 float를 사용하게 되고, 정확히 깨지는 영역을 알 수가 없습니다.</li>
+                            <li>float의 성질을 차단하는 clear:both를 사용합니다. (x) 깨지는 영역을 정확히 확인 할 수 없습니다.</li>
+                            <li>float를 사용한 부모박스한테 overflow: hidden을 사용합니다.(0)</li>
+                            <li>clearfix 속성을 만들어서 사용합니다. (0)</li>
+                        </ol>
+                        
+                        <br>
+                        <h2>컬러를 표현하는 방법</h2>
+                        <ul>
+                        <li>색상명으로 표현 : 색상의 이름을 나타내는 방법입니다.(aqua, black, blue, fuchsia)</li>
+                        <li>RGB값으로 표현 : rgb(red, green, blue)와 같은 형식으로 색을 표현합니다. </li>
+                        <li>RGBA값으로 표현 : rgb 표현의 확장으로, 불투명도를 지정하는 기능이 추가된 것입니다.</li>
+                        <li>HEX값으로 표현 : #RRGGBB 형식의 16진수 색상 값을 이용하여 표현하는 방법입니다.</li>
+                        <li>HSL/HSLA값으로 표현 : HSL는 Hue(색상), Saturation(채도), Lightness(명도)로 색상을 정의하는 방법입니다.</li>
+                        </ul>
+                        <br>
+                        <h2>단위를 표현하는 방법</h2>
+                        <ul>
+                            <li>절대단위
+                                <ul>
+                                    <li>cm : 센티미터입니다.</li>
+                                    <li>mm : 밀리미터입니다.</li>
+                                    <li>pt : 1pt 는 1/72 in 이며, 문자 크기를 지정할 때 사용합니다.</li>
+                                    <li>px : 해상도에 따라 달라집니다.</li>
+                                    <li>in : 1in 는 2.54cm 입니다.</li>
+                                    <li>pc : 1pc 는 12pt 입니다.</li>
+                                </ul>
+                            </li>
+                            <li>상대단위
+                                <ul>
+                                    <li>ch : " 0 " 의 width에 대한 비율을 나타냅니다.</li>
+                                    <li>vw : viewport width의 1%에 대한 비율을 나타냅니다.</li>
+                                    <li>vh : viewport height의 1%에 대한 비율을 나타냅니다.</li>
+                                    <li>vm in : viewport sm aller dim ension의 1%에 대한 비율을 나타냅니다.</li>
+                                    <li>vm ax : viewport larger dim ension의 1%에 대한 비율을 나타냅니다.</li>
+                                    <li>rem : Root Elem ent(html)의 font-size에 대한 비율을 나타냅니다.</li>
+                                    <li>% : 브라우저 기본 글꼴 크기를 100%하고 상대적 크기를 나타냅니다.</li>
+                                    <li>em : 브라우저 기본 글꼴 크기를 1em하고 상대적 크기를 나타냅니다</li>
+                                    <li>ex : 소문자 x의 높이를 1로 합니다.</li>
+                                </ul>
+                            </li>
+                            </ul>
+                            <br>
+                            <h2>CSS를 사용하는 방법</h2>
+                            <ul>
+                            <li>Inline style : HTML 태그 안에서 style 속성을 설정합니다.</li>
+                            <li>Internal style :  head 태그 안에서 style 요소들을 정의합니다.</li>
+                            <li>External style : 외부 CSS 파일을 링크해서 사용합니다.</li>
+                            </ul>
+                            <h2>절대경로 상대경로</h2>
+                            <ul>
+                            <li>절대경로 : 이미지의 절대적인 경로로 지정하는 방식입니다. 절대경로는 고유한 경로임으로, 위의 예처럼 http://가 포함되어 있는 절대경로를 경로명만 웹 브라우저 주소줄에 입력해도 그 이미지가 그대로 나오게 됩니다.</li>
+                            <li>상대경로 : 이미지를 삽입할 HTML 문서를 기준으로 경로를 인식하는 방법입니다. 이미지 파일이 HTML 문서와 같은 폴더에 있는지, 상위 폴더에 있는지, 하위 폴더에 있는지를 따져보고 경로를 지정해야 합니다.</li>
+                            </ul>
+                            <br>
+                            <h2>컨텐츠 요소를 안보이게 하는 방법</h2>
+                            <ul>
+                                <li>display : none; -- display : block;(영역X) (애니X)</li>
+                                <li>opacity : 0 -- opacity : 1;(영역O) (애니O)</li>
+                                <li>visibility : hidden -- visibility : visible; (영역O) (애니X)</li>
+                                <li>IR 기법 : width:0, height:0;</li>
+                            </ul>
+                            <h2>텍스트를 한 줄로 나타내는 방법</h2>
+                            <ul>
+                                <li>의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) <br />.ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;}</li>
+                                <li>의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 하는 경우(WA IR) <br />.ir_wa {display: block; overflow: hidden; position: relative; z-index: -1; width: 100%; height: 100%;}</li>
+                                <li>screen out 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 경우(Screen Out) <br />.ir_so {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}</li>
+                            </ul>
+
+                            <br>
+                            <h2>미디어쿼리(Mediaquery)</h2>
+                            <p class="well">미디어 쿼리는 화면 크기에 따른 각각의 속성 값을 지정하여, 여러가지 화면을 구성하는 기술입니다.</p>
+                            <p>@media [only/not] [media type] [and/,] (조건문){실행문}</p>
+                            <ul>
+                                <li>@media : 미디어쿼리 시작을 의미합니다.</li>
+                                <li>[only/not] : only는 미디어쿼리를 지원하는 브라우저에서만 해석하고, not은 반대를 의미합니다. 미디어 쿼리 구문을 해석하라는 명령어입니다.(생략가능)</li>
+                                <li>[media type] : 미디어쿼리를 해석해야 할 대상을 나타냅니다.(생략가능)
+                                    <ul>
+                                        <li>all : 모든 미디어 유형</li>
+                                        <li>screen : 컴퓨터 화면</li>
+                                        <li>print : 인쇄 장치</li>
+                                        <li>handheld : 휴대용 장비</li>
+                                        <li>tv : 텔레비젼</li>
+                                        <li>aural : 음성출력기</li>
+                                        <li>braille : 점자 출력기</li>
+                                        <li>projection : 프로젝트</li>
+                                        <li>tty : 고정폭을 가지는 텔레타이프</li>
+                                    </ul>
+                                </li>
+                                <li>[and/,] : and는 둘다 조건에 맞아야 하고, ','는 하나만 맞아도 실행합니다. 앞과 뒤에 조건을 나타냅니다.(생략 가능)</li>
+                                <li>(조건문) : 해당 조건을 설정합니다. </li>
+                                <li>{실행문} : 조건에 따른 실행을 설정합니다.</li>
+                            </ul>
+                            
+                            <h1>CSS Reference</h1>
+
+                            <h2>background</h2>
+                           <p class="well">백그라운드 배경 속성 값을 설정합니다.</p>
+
+                            <br>    
+                            <h2>background-imge</h2>   
+                            <p class="well">백그라운드 이미지를 설정합니다.</p>
+                            <ul>                         
+                                <li>background-imge : none; - 백그라운드 이미지 속성을 설정하지 않습니다.</li>
+                                <li>background-imge : url(이미지 경로); 백그라운드 이미지를 설정합니다.</li>
+                            </ul>
+
+                            <h2>background-attachment</h2>
+                            <p class="well">백그라운드 이미지 고정 여부를 설정합니다.</p>
+                            <ul>
+                                <li>background-attachment : scroll(기본값)</li>
+                                <li>background-attachment : fixed; - 배경이미지를 고정하고 컨텐츠만 움직입니다.</li>
+                                <li>background-attachment : local; - 배경이미지와 컨텐츠가 같이 움직입니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>background-position</h2>
+                             <p class="well">백그라운드 위치를 설정합니다.</p>
+                              <ul>
+                                  <li>background-position : left top;</li>
+                                  <li>background-position : left center;</li>
+                                  <li>background-position : left bottom;</li>
+                                  <li>background-position : right top;</li>
+                                  <li>background-position : right center;</li>
+                                  <li>background-position : right bottom;</li>
+                                  <li>background-position : center top;</li>
+                                  <li>background-position : center center;</li>
+                                  <li>background-position : center bottom;</li>
+                                  <li>background-position : 10px 20px;</li>
+                                  <li>background-position : 10% 20%;</li>
+                                  <li>background-position : 10% 20%, 10px 20px, center top;</li>
+                              </ul>
+
+                            <h2>background-repeat</h2>
+                            <p class="well">백그라운드 이미지 반복 여부를 설정합니다.</p>
+                             <ul>
+                                 <li>background-repeat : repeat(기본) - 이미지를 x축 y축으로 반복 설정합니다.</li>
+                                 <li>background-repeat : repeat-x - 이미지를 x축으로 반복 설정합니다.</li>
+                                 <li>background-repeat : repeat-y - 이미지를 Y축으로 반복 설정합니다.</li>
+                                 <li>background-repeat : no-repeat - 이미지를 반복하지 않고 하나만 나오게 합니다.</li>
+                             </ul>
+
+                            <h2>background-size</h2>
+                            <p class="well">백그라운드 이미지 사이즈를 설정합니다.</p>
+                            <ul>
+                                <li>background-size : length(단위)</li>
+                                <li>background-size : auto(기본값)</li>
+                                <li>background-size : contain - 이미지를 요소의 크기에 맞게 설정합니다. 가로와 세로 비율을 유지하기 때문에 공백이 생길 수 있습니다.</li>
+                                <li>background-size : cover - 이미지를 요소의 크기에 맞게 설정합니다. 공백 없이 화면 크기에 맞추기 때문에 이미지가 왜곡 될 수 있습니다.</li>
+                            </ul>
+
+                            <h2>background-blend-mode</h2>
+                            <p class="well">백그라운드 이미지 브랜드 모드를 설정합니다.</p>
+
+                            <br>
+                            <h2>background-color</h2>
+                            <p class="well">배경 색상을 지정합니다.</p>
+                            <ul>
+                            <li>transparent(기본값) : 배경색을 투명하게 설정합니다.</li>
+                            <li>color : 배경의 컬러색을 지정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border</h2>
+                            <p class="well">border는 테두리를 만드는 속성입니다. 위, 오른쪽, 아래, 왼쪽 선을 한 번에 정합니다.</p>
+                            <ul>
+                                <li>border-width : 테두리 두께 속성을 설정합니다.</li>
+                                <li>border-style :  테두리 종류를 설정합니다.</li>
+                                <li>border-color : 테두리 색을 설정합니다.</li>
+                                <li>border-image :  테두리 이미지를 설정합니다</li>
+                                <li>border-radius : 테두리 굴곡을 설정합니다.</li>
+                            </ul>
+
+
+                            <br>    
+                            <h2>border-color</h2>
+                            <p class="well">선의 색상을 결정합니다. 보통의 색상 속성과 마찬가지로, 색상 명이나 색상 코드가 들어갈 수 있습니다.</p>
+                            <ui>
+                                <li>CSS 컬러 값 : 색상 키워드, 16진수 값, rgb 값등의 css 컬러 속성 값을 지정합니다.</li>
+                                <li>transparent : 투명을 지정합니다.</li>
+                                <li>inherit : 부모 요소로부터 값을 상속 받습니다.</li>
+                            </ui>
+
+                            <br>    
+                            <h2>border-style(선의 형태)</h2>
+                            <p class="well">선의 형태는 실선이나, 점선 등으로 바꿔줄 수 있으며, 또는 아예 없앨 수도 있습니다. </p>
+                            <ul>
+                                <li>none : 선을 없앱니다. 대부분 요소의 기본 값입니다.</li>
+                                <li>solid : 실선의 형태로 적용합니다.</li>
+                                <li>dotted : 점선 형태로 적용합니다.</li>
+                                <li>dashed : 바느질선 같은 형태의 점선입니다.</li>
+                                <li>double : 이중 선의 형태입니다. 굵기가 3px 이상이 되어야 볼 수 있습니다.</li>
+                                <li>groove : 입체적으로 선을 홈이 들어간 것처럼 보여줍니다. 최소 2px은 되야 확인 가능합니다.</li>
+                                <li>ridge : groove와 비슷하지만, 음영 값이 반대라 선이 돌출되어 보입니다.</li>
+                                <li>inset : 요소 전체가 안으로 들어가 보입니다.</li>
+                                <li>outset : inset의 반대입니다. 요소 전체가 밖으로 돌출되어 보입니다.</li>
+                                <li>inherit : 부모의 속성을 상속받습니다.</li>
+                            </ul>
+
+                            <br>
+                            <h2>border-width</h2>
+                            <p class="well">선의 두께를 정합니다. 기본값은 medium입니다. 선의 굵기는 px이나 em 등의 단위를 쓸 수 있으며, 보통 px를 많이 사용합니다. 속성을 작성할 때에는 "border-방향-요소"의 방식으로 작성합니다.</p>
+                            <ul>
+                                <li>border-width: thin; : 얇은 테두리입니다.</li>
+                                <li>border-width: medium; :보통의 테두리입니다.</li>
+                                <li>border-width: thic;k - 두꺼운 테두리입니다.</li>
+                                <li>border-width: length; : 부동 소수점 숫자 뒤에 절대 단위 지정자( cm , mm , in , pt , pc ) 또는 상대 단위 지정자( em , ex , px )가 오는 값을 지정합니다.</li>
+                                <li>border-width: initial;  : 기본값으로 설정합니다.</li>
+                                <li>border-width: inherit; : 부모 요소의 속성값을 상속받습니다. </li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-top</h2>
+                            <p class="well">엘리먼트의 상단 테두리의 너비, 색상, 스타일을 지정합니다.</p>
+                            <ul>
+                                <li>border-top-color :  위쪽 테두리 색 속성을 설정합니다.</li>
+                                <li>border-top-style : 위쪽 테두리 스타일 속성을 설정합니다.</li>
+                                <li>border-top-width : 위쪽 테두리 두께 속성을 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-top-color</h2>
+                            <p class="well">엘리먼트의 상단 테두리의 색상을 지정합니다.</p>
+                            <ul>
+                                <li>color :  테두리 위쪽 색을 설정합니다.</li>
+                                <li>transparent : 테두리 위쪽 색을 투명하게 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-top-width</h2>
+                            <p class="well">엘리먼트의 상단 테두리의 너비를 지정합니다.</p>
+                            <ul>
+                                 <li>medium : 테두리의 두께를 medium(3px)으로 설정합니다.</li>
+                                 <li>thin : 테두리의 두께를 thin(1px)으로 설정합니다. </li>
+                                 <li>thick : 테두리의 두께를 thick(5px)으로 설정합니다.</li>
+                                 <li>length : 테두리의 두께를 CSS 단위로 설정합니다.</li>
+                                 <li>inherit : 테두리의 두께를 부모 요소로부터 상속받습니다.</li>
+                            </ul>            
+
+                            <br>    
+                            <h2>border-top-style</h2>
+                            <p class="well">엘리먼트의 상단 테두리의 스타일을 지정합니다.</p>
+                             <ul>
+                                <li>none : 테두리 스타일을 설정하지 않습니다.</li>
+                                <li>hidden : 테두리 스타일을 숨김으로 설정합니다.</li>
+                                <li>dotted : 테두리 스타일을 dotted(점선)으로 설정합니다.</li>
+                                <li>dashed : 테두리 스타일을 dashed(긴 점선)으로 설정합니다.</li>
+                                <li>solid : 테두리 스타일을 solid(실선)으로 설정합니다.</li>
+                                <li>double : 테두리 스타일을 double(이중선)으로 설정합니다.</li>
+                                <li>groove : 테두리 스타일을 groove(움푹 들어간 입체적인 선)로 설정합니다.</li>
+                                <li>ridge : 테두리 스타일을 ridge(앞으로 튀어나온 입체적인 선)로 설정합니다.</li>
+                                <li>inset : 테두리 스타일을 inset(박스 전체가 움푹 들어간 입체적인 선)로 설정합니다.</li>
+                                <li>outset : 테두리 스타일을 outset(박스 전체가 앞으로 튀어나온 입체적인 선)로 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-right</h2>
+                            <p class="well">엘리먼트의 오른쪽 테두리의 너비, 색상, 스타일을 지정합니다.</p>
+                            <ul>
+                                <li>border-right-color : 오른쪽 테두리 색 속성을 설정합니다.</li>
+                                <li>border-right-style :  오른쪽 테두리 스타일 속성을 설정합니다.</li>
+                                <li>border-right-width : 오른쪽 테두리 두께 속성을 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-right-color</h2>
+                            <p class="well">엘리먼트의 오른쪽 테두리의 색상을 지정합니다.</p>
+                            <ul>
+                                <li>color : 테두리 오른쪽 색을 설정합니다.</li>
+                                <li>transparent : 테두리 오른쪽 색을 투명하게 설정합니다.</li>
+                            </ul>
+                            
+                            <br>    
+                            <h2>border-right-width</h2>
+                            <p class="well">엘리먼트의 오른쪽 테두리의 너비를 지정합니다.</p>
+                             <ul>
+                                 <li>medium : 테두리의 두께를 medium(3px)으로 설정합니다.</li>
+                                 <li>thin : 테두리의 두께를 thin(1px)으로 설정합니다. </li>
+                                 <li>thick : 테두리의 두께를 thick(5px)으로 설정합니다.</li>
+                                 <li>length : 테두리의 두께를 CSS 단위로 설정합니다.</li>
+                                 <li>inherit : 테두리의 두께를 부모 요소로부터 상속받습니다.</li>
+                            </ul>    
+                            
+                            <br>    
+                            <h2>border-right-style</h2>
+                            <p class="well">엘리먼트의 오른쪽 테두리의 스타일을 지정합니다.</p>
+                              <ul>
+                                <li>none : 테두리 스타일을 설정하지 않습니다.</li>
+                                <li>hidden : 테두리 스타일을 숨김으로 설정합니다.</li>
+                                <li>dotted : 테두리 스타일을 dotted(점선)으로 설정합니다.</li>
+                                <li>dashed : 테두리 스타일을 dashed(긴 점선)으로 설정합니다.</li>
+                                <li>solid : 테두리 스타일을 solid(실선)으로 설정합니다.</li>
+                                <li>double : 테두리 스타일을 double(이중선)으로 설정합니다.</li>
+                                <li>groove : 테두리 스타일을 groove(움푹 들어간 입체적인 선)로 설정합니다.</li>
+                                <li>ridge : 테두리 스타일을 ridge(앞으로 튀어나온 입체적인 선)로 설정합니다.</li>
+                                <li>inset : 테두리 스타일을 inset(박스 전체가 움푹 들어간 입체적인 선)로 설정합니다.</li>
+                                <li>outset : 테두리 스타일을 outset(박스 전체가 앞으로 튀어나온 입체적인 선)로 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-bottom</h2>
+                            <p class="well">엘리먼트의 하단 테두리의 너비, 색상, 스타일을 지정합니다.</p>
+                            <ul>
+                                <li>border-bottom-color : 아래쪽 테두리 색 속성을 설정합니다.</li>
+                                <li>border-bottom-style : 아래쪽 테두리 스타일 속성을 설정합니다.</li>
+                                <li>border-bottom-width : 아래쪽 테두리 두께 속성을 설정합니다.</li>
+                                <li>inherit : 아래쪽 테두리 속성을 부모 요소로부터 상속받습니다.</li>
+                            </ul>
+                            
+                            <br>    
+                            <h2>border-bottom-color</h2>
+                            <p class="well"> 엘리먼트의 하단 테두리의 색상을  지정합니다.</p>
+                            <ul>
+                                <li>color : 테두리 아래쪽 색을 설정합니다.</li>
+                                <li>transparent : 테두리 아래쪽 색을 투명하게 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-bottom-width</h2>
+                            <p class="well">엘리먼트의 하단 테두리의 너비를 지정합니다.</p>
+                            <ul>
+                                <li>medium : 테두리의 두께를 medium(3px)으로 설정합니다.</li>
+                                <li>thin : 테두리의 두께를 thin(1px)으로 설정합니다.</li>
+                                <li>thick : 테두리의 두께를 thick(5px)으로 설정합니다.</li>
+                                <li>length : 테두리의 두께를 CSS 단위로 설정합니다.</li>
+                                <li>inherit : 테두리의 두께를 부모 요소로부터 상속받습니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-bottom-style</h2>
+                            <p class="well">엘리먼트의 하단 테두리의 스타일을 지정합니다.</p>
+                            <ul>
+                                <li>none : 테두리 스타일을 설정하지 않습니다.</li>
+                                <li>hidden : 테두리 스타일을 숨김으로 설정합니다.</li>
+                                <li>dotted : 테두리 스타일을 dotted(점선)으로 설정합니다.</li>
+                                <li>dashed : 테두리 스타일을 dashed(긴 점선)으로 설정합니다.</li>
+                                <li>solid : 테두리 스타일을 solid(실선)으로 설정합니다.</li>
+                                <li>double : 테두리 스타일을 double(이중선)으로 설정합니다.</li>
+                                <li>groove : 테두리 스타일을 groove(움푹 들어간 입체적인 선)로 설정합니다.</li>
+                                <li>ridge : 테두리 스타일을 ridge(앞으로 튀어나온 입체적인 선)로 설정합니다.</li>
+                                <li>inset : 테두리 스타일을 inset(박스 전체가 움푹 들어간 입체적인 선)로 설정합니다.</li>
+                                <li>outset : 테두리 스타일을 outset(박스 전체가 앞으로 튀어나온 입체적인 선)로 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-left</h2>
+                            <p class="well">엘리먼트의 왼쪽 테두리의 너비, 색상, 스타일을 지정합니다.</p>
+                            <ul>
+                                <li>border-left-color : 왼쪽 테두리 색 속성을 설정합니다.</li>
+                                <li>border-left-style : 왼쪽 테두리 스타일 속성을 설정합니다.</li>
+                                <li>border-left-width : 왼쪽 테두리 두께 속성을 설정합니다.</li>
+                                <li>inherit : 왼쪽 테두리 속성을 부모 요소로부터 상속받습니다.</li>
+                            </ul>
+
+                            <br>       
+                            <h2>border-left-color</h2>
+                            <p class="well">엘리먼트의 왼쪽 테두리의 색상을 지정합니다.</p>
+                            <ul>
+                                <li>color : 테두리 왼쪽 색을 설정합니다.</li>
+                                <li>transparent : 테두리 왼쪽 색을 투명하게 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-left-width</h2>
+                            <p class="well">엘리먼트의 왼쪽 테두리의 너비를 지정합니다.</p>
+                             <ul>
+                                <li>medium : 테두리의 두께를 medium(3px)으로 설정합니다.</li>
+                                <li>thin : 테두리의 두께를 thin(1px)으로 설정합니다.</li>
+                                <li>thick : 테두리의 두께를 thick(5px)으로 설정합니다.</li>
+                                <li>length : 테두리의 두께를 CSS 단위로 설정합니다.</li>
+                                <li>inherit : 테두리의 두께를 부모 요소로부터 상속받습니다.</li>
+                            </ul>
+
+
+                            <br>    
+                            <h2>border-left-style</h2>
+                             <p class="well">엘리먼트의 왼쪽 테두리의 스타일을 지정합니다.</p>
+                              <ul>
+                                <li>none : 테두리 스타일을 설정하지 않습니다.</li>
+                                <li>hidden : 테두리 스타일을 숨김으로 설정합니다.</li>
+                                <li>dotted : 테두리 스타일을 dotted(점선)으로 설정합니다.</li>
+                                <li>dashed : 테두리 스타일을 dashed(긴 점선)으로 설정합니다.</li>
+                                <li>solid : 테두리 스타일을 solid(실선)으로 설정합니다.</li>
+                                <li>double : 테두리 스타일을 double(이중선)으로 설정합니다.</li>
+                                <li>groove : 테두리 스타일을 groove(움푹 들어간 입체적인 선)로 설정합니다.</li>
+                                <li>ridge : 테두리 스타일을 ridge(앞으로 튀어나온 입체적인 선)로 설정합니다.</li>
+                                <li>inset : 테두리 스타일을 inset(박스 전체가 움푹 들어간 입체적인 선)로 설정합니다.</li>
+                                <li>outset : 테두리 스타일을 outset(박스 전체가 앞으로 튀어나온 입체적인 선)로 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-image</h2>
+                            <p class="well">< div > 요소 등의 테두리에 이미지를 삽입할 수 있는 속성입니다.</p>
+                            <ul>
+                                <li>border-image-source : 테두리 이미지 경로를 설정합니다.</li>
+                                <li>border-image-slice : 테두리 이미지 크기를 설정합니다.</li>
+                                <li>border-image-width : 테두리 이미지 두께를 설정합니다.</li>
+                                <li>border-image-outset :   테두리 이미지 간격을 설정합니다.</li>
+                                <li>border-image-repeat : 테두리 이미지 반복을 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-image-outset</h2>
+                            <p class="well">테두리 영역 너머로 테두리로 사용할 이미지가 얼마만큼 넘어갈지를 설정할 수 있습니다.</p>
+                            <ul>
+                                <li>length : 테두리 이미지 간격을 CSS 단위로 설정합니다.</li>
+                                <li>number : 테두리 이미지 간격을 %로 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-image-repeat</h2>
+                            <p class="well">테두리로 사용할 이미지의 중간 부분의 처리를 반복으로 할지 늘릴지를 설정할 수 있습니다.</p>
+                            <ul>
+                                <li>stretch : 테두리 이미지는 반복하지 않고 전체 길이에 맞게 한번만 설정합니다.</li>
+                                <li>repeat : 테두리 이미지는 반복하여 설정됩니다.</li>
+                                <li>round : 테두리 이미지는 반복하여 설정됩니다. 단 전체 길이에 맞게 설정됩니다.</li>
+                                <li>space :  테두리 이미지는 반복하여 설정됩니다. 단 전체 길이에 맞게 설정되지 않습니다. 남은 여백은 이미지로 채워집니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-image-slice</h2>
+                            <p class="well">테두리로 사용할 이미지를 자르는 방법을 설정할 수 있습니다.</p>
+                            <ul>
+                                <li>number : 테두리 이미지 크기를 숫자로 설정합니다.</li>
+                                <li>percentage : 테두리 이미지 크기를 %로 설정합니다.</li>
+                                <li>number :    테두리 이미지 크기에 맞게 설정합니다.</li>
+                            </ul>
+                            <br>    
+                            <h2>border-image-source</h2>
+                            <p class="well">테두리로 사용할 이미지를 설정할 수 있습니다.</p>
+                            <ul>
+                                <li>none : 테두리 이미지를 설정하지 않습니다.</li>
+                                <li>image : 테두리 이미지 경로를 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-image-width</h2>
+                            <p class="well">테두리로 사용할 이미지의 너비를 설정합니다.</p>
+                            <ul>
+                                <li>length : 테두리 이미지 두께를 CSS 단위로 설정합니다.</li>
+                                <li>percentage : 테두리 이미지 두께를 %로 설정합니다.</li>
+                                <li>number : 테두리 이미지 두께를 숫자로 설정합니다.</li>
+                                <li>auto : 테두리 이미지 두께를 자동값으로 설정합니다..</li>
+                            </ul>
+                            
+                            <br>    
+                            <h2>border-radius</h2>
+                            <p class="well">모든 border-radius 속성을 이용한 스타일을 한 줄에 설정할 수 있습니다.</p>
+                            <ul>
+                                <li>border-top-left-radius : 테두리 굴곡을 위부분 왼쪽에 설정합니다.</li>
+                                <li>border-top-right-radius : 테두리 굴곡을 위부분 오른쪽에 설정합니다.</li>
+                                <li>border-bottom-right-radius : 테두리 굴곡을 아래부분 오른쪽에 설정합니다. </li>
+                                <li>border-bottom-left-radius : 테두리 굴곡을 아래부분 왼쪽에 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-top-left-radius</h2>
+                            <p class="well">테두리(border)의 top-left 부분 모서리의 스타일을 설정할 수 있습니다.</p>
+                            <ul>
+                                <li>length : 테두리 굴곡을 CSS 단위로 설정합니다.</li>
+                                <li>% : 테두리 굴곡을 %로 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>border-top-right-radius</h2>
+                            <p class="well">테두리의 top-right 부분 모서리의 스타일을 설정할 수 있습니다.</p>
+                            <ul>
+                                <li>length : 테두리 굴곡을 CSS 단위로 설정합니다.</li>
+                                <li>% : 테두리 굴곡을 %로 설정합니다.</li>
+                            </ul>
+
+
+                            <br>    
+                            <h2>border-bottom-left-radius</h2>
+                            <p class="well">테두리의 bottom-left 부분 모서리의 스타일을 설정할 수 있습니다.</p> 
+                            <ul>
+                                <li>length : 테두리 굴곡을 CSS 단위로 설정합니다.</li>
+                                <li>% : 테두리 굴곡을 %로 설정합니다.</li>
+                            </ul>
+
+
+                                <br>    
+                            <h2>border-bottom-right-radius</h2>
+                            <p class="well">테두리의 bottom-right 부분 모서리의 스타일을 설정할 수 있습니다.</p>
+                            <ul>
+                                <li>length : 테두리 굴곡을 CSS 단위로 설정합니다.</li>
+                                <li>% : 테두리 굴곡을 %로 설정합니다.</li>
+                            </ul>
+
+
+
+                            <br>
+                            <h2>color</h2>
+                            <p class="well">텍스트 내용의 글자 색상을 지정합니다.</p>
+                            <ul>
+                            <li>color : 색을 지정합니다.</li>
+                            </ul>
+                            
+                            <br>
+                            <h2>clear</h2>
+                            <p class="well">float 요소의 성질을 차단합니다.</p>
+                            <ul>
+                                <li>clear: none; - clear를 적용하지 않습니다.</li>
+                                <li>clear: left; - 왼쪽 요소에 성질을 차단합니다.</li>
+                                <li>clear: right; - 오른쪽 요소에 성질을 차단합니다.</li>
+                                <li>clear: both; - 양쪽 요소에 성질을 차단합니다.</li>
+                            </ul>
+                            
+                            <br>
+                            <h2>font-sizes</h2>
+                            <p class="well">글꼴의 크기를 지정합니다.</p>
+                            <ul>
+                            <li>font-sizes: xx-small;(x)</li>
+                            <li>font-sizes: x-small;(x)</li>
+                            <li>font-sizes: small;(x)</li>
+                            <li>font-sizes: xx-large;(x)</li>
+                            <li>font-sizes: x-large;(x)</li>
+                            <li>font-sizes: large;(x)</li>
+                            <li>font-sizes: smaller;(x)</li>
+                            <li>font-sizes: larger(x)</li>
+                            <li>font-sizes: medium(o)</li>
+                            <li>font-sizes: percentage(x)</li>
+                            </ul>
+                            <br>
+                            <h2>float</h2>
+                            <p class="well">블록 요소의 정렬 상태를 설정합니다..</p>
+                            <ul>
+                            <li>float "left" : 블록 요소를 왼쪽으로 이동시킵니다. </li>
+                            <li>float "right" : 블록 요소를 오른쪽으로 이동시킵니다. </li>
+                            <li>float "none" : float의 성질을 적용하지 않습니다..</li>
+                            </ul>
+                            
+                            <br>
+                            <h2>height</h2>
+                            <p class="well">블럭레벨 요소의 높이를 설정합니다.</p>
+                            
+                            <ul>
+                            <li>auto : 다른 속성들의 값에 따라 적용됩니다.</li>
+                            <li>height : length.</li>
+                            </ul>
+                            
+                            <br>
+                            <h2>line-height</h2>
+                            <p class="well">문장과 문장 사이의 간격을 설정합니다.</p>
+                            <ul>
+                            <li>line-height : Nomal(기본)</li>
+                            <li>line-height : number</li>
+                            <li>line-height : lenght</li>
+                            <li>line-height : percentage</li>
+                            </ul>
+                            <br>
+                            <h2>text-align</h2>
+                            <p class="well">텍스트 정렬 방식을 설정합니다.</p>
+                            <ul>
+                                <li>text-align : left(기본) - 텍스트를 왼쪽 정렬합니다.</li>
+                                <li>text-align : center; - 텍스트를 가운데 정렬합니다.</li>
+                                <li>text-align : right; - 텍스트를 오른쪽 정렬합니다.</li>
+                                <li>text-align : justify; - 텍스트를 양쪽 정렬합니다.</li>
+                            </ul>
+                            <br>
+                            <h2>text-transform</h2>
+                            <p class="well">영문 텍스트를 대문자 또는 소문자로 설정합니다.</p>
+                            <ul>
+                            <li>text-transform : none; - 속성을 적용하지 않습니다.</li>
+                            <li>text-transform : capitalize; - 각 단어의 첫 글자만 대문자로 변경합니다. </li>
+                            <li>text-transform : uppercase; - 텍스트를 모두 대문자로 변경합니다.</li>
+                            <li>text-transform : lowercase; - 텍스트를 모두 소문자로 변경합니다. </li>
+                            </ul>
+                            <h2>width</h2>
+                            <p class="well">블럭레벨 요소의 너비를 설정합니다.</p>
+                            <ul>
+                            <li>길이 : 고정된 값을 지정합니다. 음수값은 지정할 수 없습니다.</li>
+                            <li>백분율 : 부모 요소를 기준으로 계산됩니다. 음수값은 지정할 수 없습니다.</li>
+                            </ul>
+                            
+                            <h2>margin</h2>
+                            <p class="well">박스 요소의 바깥쪽 여백을 설정합니다.</p>
+                            <ul>
+                                <li>margin-top: 10px;        = 요소의 위 바깥쪽 여백을 설정합니다.</li>
+                                <li>margin-right: 11px;      = 요소의 오른쪽 바깥쪽 여백을 설정합니다.</li>
+                                <li>margin-bottom: 12px; = 요소의 아래쪽 바깥쪽 여백을 설정합니다.</li>
+                                <li>margin-left: 13px; = 요소의 왼쪽 바깥쪽 여백을 설정합니다.</li>
+                                <li>margin : 10px 11px 12px 13px; = 위쪽(10px)/오른쪽(11px)/아래쪽(12px)/왼쪽(12px)</li>
+                                <li>margin : 10px 11px 12px; = 위쪽(10px)/왼쪽,오른쪽(11px)/아래쪽(12px)</li>
+                                <li>margin : 10px 11px; = 위쪽,아래쪽(10px)/왼쪽,오른쪽(11px)</li>
+                                <li>margin : 10px 11px 12px; = 위쪽,오른쪽,아래쪽,왼쪽(10px)</li>
+                                <li>margin : auto; =자동값, 기본값</li>
+                                <li>margin: 0 auto; = 블록 요소를 가운데 정렬할 때 사용합니다. </li>
+                            </ul>
+                            
+
+                            <br>
+                            <h2>padding</h2>
+                            <p class="well">엘리먼트의 상.하.좌.우 여백을 한꺼번에 지정합니다.</p>
+                            <ul>
+                                <br>
+                                <img src=https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/441/1280.gif alt="">
+
+                                <br>
+                                <br>
+                                <br>
+                                <img src=https://www.computerhope.com/jargon/p/padding.jpg alt="">
+
+                                <br>
+                                <br>
+                                <li>패딩 축약 표현(padding shorthand) : 모든 padiding 속성을 이용한 스타일을 한 줄에 설정할 수 있습니다.</li>
+                                <li>길이 : 고정된 너비를 지정합니다. ('10px'. '1em' 등 ) 음수값은 지정할 수 없습니다.</li>
+                                <li>백분율 : 용기블럭의 너비를 참조합니다.</li>
+                                <li>auto : 자동으로 계산된 값을 지정합니다.</li>
+                                <li>inherit : 부모 엘리멘트의 값을 상속합니다.</li>
+                                <li>padding-top : 윗쪽의 패딩(padding) 값을 설정합니다.</li>
+                                <li>padding-right : 오른쪽의 패딩(padding) 값을 설정합니다..</li>
+                                <li>padding-bottom : 아래쪽의 패딩(padding) 값을 설정합니다.</li>
+                                <li>padding-left : 왼쪽의 패딩(padding) 값을 설정합니다.</li>
+                            </ul>
+
+                            <br>    
+                            <h2>text-decoration</h2>
+                            <p class="well">밑줄, 텍스트 그림자 및 강조 표시 등 텍스트 장식에 관련된 기능을 정의하는 CSS 모듈입니다.</p>
+                            <ul>
+                                <li>text-decoration: none - 선을 만들지 않습니다.</li>
+                                <li>text-decoration: line-through - 글자 중간에 선을 만듭니다.</li>
+                                <li>text-decoration: overline - 글자 위에 선을 만듭니다.</li>
+                                <li>text-decoration: underline - 글자 아래에 선을 만듭니다.</li>
+                                <li>text-decoration: initial - 기본값으로 설정합니다.</li>
+                                <li>text-decoration: inherit - 부모 요소의 속성값을 상속받습니다.</li>
+                            </ul>
+
+
+                        <br>
+                        <h2>cursor</h2>
+                        <p class="well"> 해당 속성을 이용하면 해당 태그 위에 위치하는 마우스 커서의 모양을 바꿀 수 있습니다.</p>
+                        <ul>
+                            <li>alias : 커서의 모양을 alias으로 설정합니다.</li>
+                            <li>all-scroll : 커서의 모양을 all-scroll으로 설정합니다.</li>
+                            <li>auto : 커서의 모양을 auto으로 설정합니다.</li>
+                            <li>cell : 커서의 모양을 cell으로 설정합니다.</li>
+                            <li>context-menu : 커서의 모양을 context-menu으로 설정합니다.</li>
+                            <li>col-resize : 커서의 모양을 col-resize으로 설정합니다.</li>
+                            <li>copy : 커서의 모양을 copy으로 설정합니다.</li>
+                            <li>crosshair : 커서의 모양을 crosshair으로 설정합니다.</li>
+                            <li>default : 커서의 모양을 default으로 설정합니다.</li>
+                            <li>e-resize : 커서의 모양을 e-resize으로 설정합니다.</li>
+                            <li>ew-resize : 커서의 모양을 ew-resize으로 설정합니다.</li>
+                            <li>grab : 커서의 모양을 grab으로 설정합니다.</li>
+                            <li>grabbing : 커서의 모양을 grabbing으로 설정합니다.</li>
+                            <li>help : 커서의 모양을 help으로 설정합니다.</li>
+                            <li>move :  커서의 모양을 move으로 설정합니다.</li>
+                            <li>n-resize : 커서의 모양을 n-resize으로 설정합니다.</li>
+                            <li>ne-resize : 커서의 모양을 ne-resize으로 설정합니다.</li>
+                            <li>nesw-resize : 커서의 모양을 nesw-resize으로 설정합니다.</li>
+                            <li>ns-resize : 커서의 모양을 ns-resize으로 설정합니다.</li>
+                            <li>URL : 커서의 이미지 주소를 설정합니다.</li> 
+                            <li>no-drop : 커서의 모양을 no-drop으로 설정합니다.</li>
+                            <li>none :  커서의 모양을 none으로 설정합니다.</li>
+                            <li>not-allowed : 커서의 모양을 not-allowed으로 설정합니다.</li>
+                            <li>pointer : 커서의 모양을 pointer으로 설정합니다.</li>
+                            <li>progress : 커서의 모양을 progress으로 설정합니다.</li>
+                            <li>row-resize : 커서의 모양을 row-resize으로 설정합니다.</li>
+                            <li>s-resize : 커서의 모양을 s-resize으로 설정합니다.</li>
+                            <li>se-resize : 커서의 모양을 se-resize으로 설정합니다.</li>
+                            <li>sw-resize : 커서의 모양을 sw-resize으로 설정합니다.</li>
+                            <li>text : 커서의 모양을 text으로 설정합니다.</li>
+                            <li>vertical-text : 커서의 모양을 vertical-text으로 설정합니다.</li>
+                            <li>w-resize : 커서의 모양을 w-resize으로 설정합니다.</li>
+                            <li>wait : 커서의 모양을 wait으로 설정합니다.</li>
+                            <li>zoom-in : 커서의 모양을 zoom-in으로 설정합니다.</li>
+                            <li>zoom-out : 커서의 모양을 zoom-out으로 설정합니다.</li>
+                        </ul>
+
+                        <br>
+                        <h2>overflow</h2>
+                        <p class="well">overflow 속성은 지정한 영역에 요소들이 벗어났을 때 속성을 설정합니다.</p>
+                        <ul>
+                            <li>visible : 지정한 영역에 요소들을 보이게 합니다.</li>
+                            <li>hidden : 지정한 영역에 넘쳐난 요소들을 안보이게 합니다.</li>
+                            <li>scroll : 지정한 영역에 무조건 스크롤 바를 생기게 합니다.</li>
+                            <li>auto : 지정한 영역에 요소들이 넘치면 자동으로 스크롤 바가 생깁니다.</li>
+                            <li>inherit : overflow-x의 속성 값을 상위요소한테 상속받습니다.</li>
+                        </ul>
+                        
+                        <br>
+                        <h2>text-overflow </h2>
+                        <p class="well">text-overflow 속성은 문자열 영역 속성을 설정합니다.</p>
+                        <ul>
+                            <li>clip : 문자열를 그대로 보여주는 기본값입니다.</li>
+                            <li>ellipsis : 문자열 끝부분을 "..."으로 설정합니다.</li>
+                            <li>string : 짤린 텍스트 영역을 string으로 설정합니다.</li>
+                        </ul>
+                        
+                        <br>
+                        <h2>white-space</h2>
+                        <p class="well">white-space 속성은 줄바꿈, 공백, 줄 속성을 설정합니다.</p>
+                        <ul>
+                            <li>normal : white-space 속성의 기본 값입니다.</li>
+                            <li>nowrap : 줄바꿈을 하지 않습니다.</li>
+                            <li>pre : 마크업 공백과 동일하게 보여줍니다. 줄바꿈을 하지 않습니다. 공백 한 칸 이상을 인식합니다.</li>
+                            <li>pre-line : 마크업 공백과 동일하게 보여줍니다. 줄바꿈을 합니다. 공백 한 칸 이상을 인식하지 못합니다.</li>
+                            <li>pre-wrap : 마크업 공백과 동일하게 보여줍니다. 줄바꿈을 합니다. 공백 한 칸 이상을 인식합니다.</li>
+                            <li>inherit : white-space의 속성 값을 상위요소한테 상속받습니다.</li>
+                        </ul>
+                        <br>
+                        <h2>opacity</h2>
+                        <p class="well">opacity 속성은 요소의 투명도를 설정합니다.</p>
+                        <ul>
+                            <li>number : 요소의 투명도를 0~1 사이로 설정합니다.</li>
+                            <li>opacity 속성은 요소의 투명도를 설정합니다.</li>
+                            <li>opacity는 0~1 사이의 숫자로 표현 할 수 있으며, 0.5이면 투명도 50%와 동일합니다.</li>
+
+                        </ul>
+                        <br>
+                        <h2>vendor prefix</h2>
+                        <p class="well">벤더 프리픽스(vendor prefix)란 이러한 주요 웹 브라우저 공급자가 새로운 실험적인 기능을 제공할 때 이전 버전의 웹 브라우저에 그 사실을 알려주기 위해 사용하는 접두사(prefix)를 의미합니다.</p>
+                        <ul>
+                          <li>-webkit-border-radius: 10px;	사파리, 크롬</li>
+                          <li>-moz-​border-radius: 10px;	파이어폭스</li>
+                          <li>-o-​border-radius: 10px;	오페라</li>
+                          <li>-ms-border-radius: 10px;	인터넷 익스플로러(대부분 생략)</li>
+                          <li>border-radius: 10px;	표준 코딩은 제일 아래에 적는다.</li>
+                          <li>벤더 프리픽스는 실험적인 해당 기능들이 CSS 표준 권고안에 포함되거나, 완벽하게 제정된 상태가 되면 더는 사용할 필요가 없어집니다.</li>
+                        </ul>
+                        <br>
+                        <h2>해상도에 따른 이미지 처리하는 방법</h2>
+                        <ul>
+                          <li>&lt;img&gt;태그를 이용하는 방법
+                            <ul>
+                             <li>srcset과 sizes 속성을 추가하여 반응형 이미지 처리</li>
+                             <li>srcset : srcset을 지원하는 브라우저는 이 값을 읽어 현재의 화면 상태에 맞는 적절한 이미지를 불러옵니다.</li>
+                             <li>sizes: 미디어쿼리의 중단점(breakpoint)별로 필요한 이미지의 정보를 추가로 제공함으로써 브라우저로 하여금 현재의 상태에 맞는 이미지를 불러옵니다.</li> 
+                            </ul>
+                          </li>
+                          <li>background를 이용하는 방법 : css에 미디어쿼리를 추가하여 해상도에 따라 각 해상도에 맞는 사이즈의 이미지를 보여주도록 설정합니다.</li>
+                            </ul>
+                        <br>
+                        <h2>text-indent</h2>
+                        <p class="well">text-indent 속성은 들여쓰기 효과를 지정합니다. 문단의 첫번째 줄을 지정한 길이만큼 들여쓰기 합니다.</p>
+                        <ul>
+                            <li>text-indent: length; : 들여쓰는 너비의 단위를 지정합니다.</li>
+                            <li>text-indent: %; : 들여쓰는 너비의 %값을 지정합니다.</li>
+                            <li>text-indent: initial; : 기본값입니다.</li>
+                        </ul>
+                        </div>
+                        <!--//span12-->
+                    </div>
+                    <!--//row-fluid-->
+                </div>
+                <!-- //contents -->
+                <!-- //footer -->
+                <div id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span12">
+                                <h5>Webstoryboy</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //footer -->
+                <!-- script -->
+                <script src="../assets/js/jquery-1.9.1.min.js"></script>
+                <script src="../assets/js/bootstrap-collapse.js"></script>
+                <script src="../assets/js/bootstrap-transition.js"></script>
+                <script src="../assets/js/google-code-prettify/prettify.js"></script>
+                <script src="../assets/js/application.js"></script>
+            </body>
+        </html>

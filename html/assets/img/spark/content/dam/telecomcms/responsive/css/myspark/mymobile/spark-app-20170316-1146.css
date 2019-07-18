@@ -1,0 +1,330 @@
+@media only screen and (max-width: 639px) {
+	.get-moving {
+		margin: 20px;
+	}
+	.get-moving .button {
+		font-size: 16px; 
+	}
+}
+.spark-app-icons {
+	margin-top: 10px !important;
+}
+.android-btn {
+	margin-bottom: 20px; 
+}
+.nocasing {
+	text-transform: lowercase;
+}
+
+.no-underline {
+    border-bottom: medium none !important;
+}
+
+.center-text {
+    text-align: center !important;
+}
+
+.content-card .inner-wrapper {
+	margin: 20px !important;
+	width: 92% !important;
+}
+
+.ios {
+	display: none;
+}
+
+.sticky .store {
+    margin-top: 0;
+}
+.android {
+	display: none;
+}
+
+.store {
+    margin-top: 10px;
+    padding: 0 5px;
+    width: 138px;
+}
+
+@media only screen and (min-width: 640px){
+	.store {
+	    margin-top: 10px;
+	    padding: 0 5px;
+	    width: 150px;
+	}
+}
+
+h2.store-card {
+    margin-bottom: 13px !important;
+}
+
+.sticky {
+     display: none;
+}
+
+
+
+
+
+/*
+==============================================
+slideDown
+==============================================
+*/
+
+
+.slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 0.3s;	
+	-webkit-animation-duration: 0.3s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;						
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	15%{
+		transform: translateY(-95%);
+	}
+	35%{
+		transform: translateY(-85%);
+	}
+	50%{
+		transform: translateY(-50%);
+	}	
+
+	65%{
+		transform: translateY(-35%);
+	}
+
+	85%{
+		transform: translateY(-15%);
+	}		
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	15%{
+		transform: translateY(-95%);
+	}
+	35%{
+		transform: translateY(-85%);
+	}
+	50%{
+		transform: translateY(-50%);
+	}	
+
+	65%{
+		transform: translateY(-35%);
+	}
+
+	85%{
+		transform: translateY(-15%);
+	}		
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+/*
+==============================================
+slideUp
+==============================================
+*/
+
+
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+
+	animation-duration: 0.3s;	
+	-webkit-animation-duration: 0.3s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;			
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(0);
+	}
+	15%{
+		transform: translateY(-15%);
+	}
+	35%{
+		transform: translateY(-35%);
+	}
+	50%{
+		transform: translateY(-50%);
+	}	
+
+	65%{
+		transform: translateY(-65%);
+	}
+
+	85%{
+		transform: translateY(-85%);
+	}		
+	100% {
+		transform: translateY(-100%);
+	}		
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		transform: translateY(0);
+	}
+	15%{
+		transform: translateY(-15%);
+	}
+	35%{
+		transform: translateY(-35%);
+	}
+	50%{
+		transform: translateY(-50%);
+	}	
+
+	65%{
+		transform: translateY(-65%);
+	}
+
+	85%{
+		transform: translateY(-85%);
+	}		
+	100% {
+		transform: translateY(-100%);
+	}		
+}
+
+
+.spark-app-sticky {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 40px;
+    position: relative;
+    max-width: 940px;
+}
+
+@media only screen and (max-width: 640px) {
+    .spark-app-sticky {
+        padding: 0;
+    }
+
+    .get-app .store-card {
+        font-size: 14px !important;
+        margin-right: 11px !important;
+    }
+
+    .get-app.visible-xs {
+        display: inline-block !important;
+    }
+
+    .the-sticky {
+        top: -3px !important;
+    }
+
+    img.store {
+	    height: 30px !important;
+	    margin-right: 0 !important;
+	    width: auto !important;
+	}
+
+    .sticky.get-app-sticky .the-sticky {
+        left: 5px;
+        top: 5px !important;
+    }
+
+    .right-app-content {
+        display: inline-block;
+        float: right;
+        position: absolute;
+        right: 0;
+        padding-right: 10px;
+    }
+
+
+	.mobile  .desktop-block {
+		display: none !important;
+	}
+}
+
+.right-app-content {
+    display: inline-block;
+}
+
+.the-sticky {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+.get-app-sticky .the-sticky {
+  top: 17px !important;
+}
+
+.spark-app-close {
+    cursor: pointer;
+}
+
+.get-app {
+    display: inline-block;
+}
+
+img.store {
+    height: 40px;
+}
+
+img.store {
+    height: 40px;
+    margin-right: 7px;
+}
+
+.spark-app-close .icon-x {
+    color: #13a4de;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+    position: relative;
+    top: 4px;
+}
+
+.get-app .store-card {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.get-app-sticky{
+    display: none;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 10px;
+}
+
+.get-app-sticky .inner-card {
+    margin: 0 auto;
+    position: relative;
+    max-width: 940px;
+}
+
+.desktop-block {
+	display: block !important;
+}

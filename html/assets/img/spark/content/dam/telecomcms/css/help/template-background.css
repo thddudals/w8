@@ -1,0 +1,7 @@
+body{
+background-color:#ffffff;
+}
+
+.sign-in-section .myspark-container .floating-container input[type="text"]{
+	width:100%;
+}

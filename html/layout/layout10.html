@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout10</title>
+    <style>
+    *{margin: 0; padding: 0;}
+    #wrap {width: 1200px; height: 1100px; margin: 0 auto;}
+    #header {width: 100%; height: 150px; background-color: #bbdefb;}
+    aside {float: left; width: 30%; height: 900px; background-color: #90caf9; }
+    .section1 {float: left; width:70%; height: 300px; background-color: #64b5f6;}
+    .section2 {float: left; width:70%; height: 300px; background-color: #1e88e5;}
+    .section3 {float: left; width:70%; height: 300px; background-color: #1976d2;}
+    footer {clear:both;width: 100%; height: 150px; background-color: #42a5f5;}
+ 
+    /* 화면 너비 0 ~ 1200px */
+    @media (max-width: 1200px) {
+        #wrap {width: 100%;}
+        aside {width: 40%;}
+        .section1 {width: 60%; height: 500px;}
+        .section2 {width: 60%; height: 400px;}
+        .section3 {width: 100%; height: 500px;}
+        article {width: 100%; height: 300px;}
+    }
+
+    /* 화면 너비 0 ~ 768px */
+    @media (max-width: 768px) {
+        aside {width: 100%; height: 300px;}
+        .section1 {width: 50%; height: 450px;}
+        .section2 {width: 50%; height: 450px;}
+        .section3 {width: 100%;}
+        article {width: 100%; height:300px;}
+    }
+        /* 화면 너비 0 ~ 480px */
+        @media (max-width: 480px) {
+        .section1 {width: 100%;height: 200px;}
+        .section2 {width: 100%;height: 200px;}
+    }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <aside id="aside"></aside>
+        <section1 class="section1"></section1>
+        <section2 class="section2"></section2>
+        <section3 class="section3"></section3>
+        <footer id="footer"></footer>
+
+    </div>
+</body>
+</html>

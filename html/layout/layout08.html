@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout08</title>
+    <style>
+    *{margin: 0; padding: 0;}
+    body {background-color: #f3e5f5;}
+    #wrap {width: 1200px; height: 1000px; margin: 0 auto;}
+    header {width: 100%; height: 100px; background-color: #7986cb;}
+    aside {float: left; width: 30%; height: 700px; background-color: #3f51b5;}
+    section {float: left; width: 70%; height: 700px; background-color: #3949ab;}
+    footer {clear:both; width: 100%; height: 100px;  background-color: #1a237e}
+    
+    /*  화면 너비 0 - 1200px */
+    @media (max-width: 1200px){
+        #wrap {width: 90%;}
+    }
+
+    /* 화면 너비 0 - 768px */
+    @media (max-width: 768px) {
+        #wrap {width: 100%;}
+    }
+
+    /* 화면 너비 0 - 480px */
+    @media (max-width: 480px) {
+        #wrap {width: 100%;}
+        header {height: 300px;}
+        aside {float: none; width: 100%; height: 300px;}
+        section {float: none; width: 100%; height: 300px;}
+    }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <aside id="aside"></aside>
+        <section id="content"></section>
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>
