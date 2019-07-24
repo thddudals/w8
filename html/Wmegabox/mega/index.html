@@ -1,69 +1,210 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="y.m song">
-    <meta name="description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
-    <meta name="keywords" content="메가박스, 유튜브, CGV, 롯데시네마">
-    <title>메가박스 사이트</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- 파비콘 -->
-    <link rel="stylesheet" href="assets/icons/favicon.ico">
-    <link rel="icon" href="assets/icon/to/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/icons/favicon.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="assets/icons/favicon_96.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/favicon_144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/icons/favicon_192.png" />
-    
-
-    <!-- 웹폰트 -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900&display=swap" rel="stylesheet">
-
-       <!-- HTLM5shiv ie6~8 -->
-    <!--[if lt IE 9]> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+        <meta name="author" content="y.m song">
+        <meta name="description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
+        <meta name="keywords" content="메가박스, 유튜브, CGV, 롯데시네마">
+        <title>메가박스 사이트</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- 파비콘 -->
+        <link rel="stylesheet" href="assets/icons/favicon.ico">
+        <link rel="icon" href="assets/icon/to/favicon.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/icons/favicon.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="96x96" href="assets/icons/favicon_96.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/favicon_144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/icons/favicon_192.png" />
+        
+        <!-- 웹폰트 -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900&display=swap" rel="stylesheet">
+        <!-- HTLM5shiv ie6~8 -->
+        <!--[if lt IE 9]>
         <script src="assets/js/html5shiv.min.js"></script>
         <script type="text/javascript">
-            alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
+        alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
         </script>
-    <![endif]-->
-
-<html>
-<body>
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <div class="header clearfix">
-                    <h1 class="logo">
-                        <span class="lo1"><img src="assets/img/logo.gif " srcset="assets/img/logo.gif 1x, assets/img/logo@2.gif 2x" alt="Megabox"></span>
-                        <span class="lo2"><img src="assets/img/logo2.gif" srcset="assets/img/logo2.gif 1x, assets/img/logo2@2.gif 2x" alt="Megabox"></span>
-                    </h1>
-                    <nav class="menu">
-                        <ul class="clearfix">
-                            <li><a href="#">영화</a></li>
-                            <li><a href="#">큐레이션</a></li>
-                            <li><a href="#">영화관</a></li>
-                            <li><a href="#">특별관</a></li>
-                            <li><a href="#">스토어</a></li>
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">로그인</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--//header-->
-    <section id="banner"></section><!--//banner-->
-    <section id="content1"></section><!--//content1-->
-    <section id="content2"></section><!--//content2-->
-    <section id="content3"></section><!--//content3-->
-    <section id="content4"></section><!--//content4-->
-    <section id="content5"></section><!--//content5-->
-    <footer id="footer"></footer><!--//footer-->
-
-</body>
-</html>
+        <![endif]-->
+        <html>
+            <body>
+                <header id="header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="header clearfix">
+                                <h1 class="logo">
+                                <span class="lo1"><img src="assets/img/logo.gif " srcset="assets/img/logo.gif 1x, assets/img/logo@2.gif 2x" alt="Megabox"></span>
+                                <span class="lo2"><img src="assets/img/logo2.gif" srcset="assets/img/logo2.gif 1x, assets/img/logo2@2.gif 2x" alt="Megabox"></span>
+                                </h1>
+                                <div id="mNav">
+                                    <h2 class="ir_so">전체 메뉴</h2>
+                                    <div class="ham">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <nav class="menu">
+                                    <ul class="clearfix">
+                                        <li><a href="#">영화</a></li>
+                                        <li><a href="#">큐레이션</a></li>
+                                        <li><a href="#">영화관</a></li>
+                                        <li><a href="#">특별관</a></li>
+                                        <li><a href="#">스토어</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                        <li><a href="#">로그인</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!--//header-->
+                <section id="banner">
+                    <h2 class="ir_so">배너 영역</h2>
+                    <div class="slider">
+                        <img src="assets/img/banner01.jpg" alt="왕좌의 게임">
+                    </div>
+                    <div class="banner">
+                        <div class="container">
+                            <div class="btn">
+                                <a href="#" class="white">상영시간표</a>
+                                <a href="#" class="purple">빠른예매</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--//banner-->
+                <section id="movie">
+                    <h2 class="ir_so">박스오피스, 최신개봉작, 상영예정작, 큐레이션</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="movie">
+                                <div class="movie_title">
+                                    <ul class="clearfix">
+                                        <li class="active"><a href="#">박스오피스</a></li>
+                                        <li><a href="#">최신개봉작</a></li>
+                                        <li><a href="#">상영예정작</a></li>
+                                        <li><a href="#">큐레이션</a></li>
+                                    </ul>
+                                </div>
+                                <div class="movie_chart">
+                                    <div>
+                                        <div class="poster">
+                                            <figure>
+                                                <img src="assets/img/poster01.jpg" srcset="assets/img/
+                                                poster01.jpg 1x, assets/img/poster01@2 2x" alt="이미지">
+                                            </figure>
+                                            <div class="rank">1</div>
+                                        </div>
+                                        <div class="infor">
+                                            <h3>
+                                            <span class="n19" title="19세 관람가">19</span>
+                                            <strong>침묵</strong>
+                                            </h3>
+                                            <div class="infor_btn">
+                                                <a href="상세정보">상세정보</a>
+                                                <a href="예매하기">예매하기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="poster">
+                                            <figure>
+                                                <img src="assets/img/poster02.jpg" srcset="assets/img/
+                                                poster02.jpg 1x, assets/img/poster02@2 2x" alt="이미지">
+                                            </figure>
+                                            <div class="rank">2</div>
+                                        </div>
+                                        <div class="infor">
+                                            <h3>
+                                            <span class="n15" title="15세 관람가">15</span>
+                                            <strong>신세계</strong>
+                                            </h3>
+                                            <div class="infor_btn">
+                                                <a href="상세정보">상세정보</a>
+                                                <a href="예매하기">예매하기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="poster">
+                                            <figure>
+                                                <img src="assets/img/poster03.jpg" srcset="assets/img/
+                                                poster03.jpg 1x, assets/img/poster03@2 2x" alt="이미지">
+                                            </figure>
+                                            <div class="rank">3</div>
+                                        </div>
+                                        <div class="infor">
+                                            <h3>
+                                            <span class="n12" title="12세 관람가">12</span>
+                                            <strong>마스터</strong>
+                                            </h3>
+                                            <div class="infor_btn">
+                                                <a href="상세정보">상세정보</a>
+                                                <a href="예매하기">예매하기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="poster">
+                                            <figure>
+                                                <img src="assets/img/poster05.jpg" srcset="assets/img/
+                                                poster05.jpg 1x, assets/img/poster05@2.jpg 2x" alt="이미지">
+                                            </figure>
+                                            <div class="rank">4</div>
+                                        </div>
+                                        <div class="infor">
+                                            <h3>
+                                            <span class="nAll" title="전체 관람가">all</span>
+                                            <strong>her</strong>
+                                            </h3>
+                                            <div class="infor_btn">
+                                                <a href="상세정보">상세정보</a>
+                                                <a href="예매하기">예매하기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--//movie-->
+                <section id="event">
+                    <div class="container">
+                        <div class="row">
+                            <div class="event">
+                                <h2>새로운 이벤트</h2>
+                                <div class="event_box">
+                                    <div class="event_left">
+                                        <figure class="e1">
+                                            <img src="assets/img/eventL01.jpg" srcset="assets/img/
+                                            eventL01.jpg 1x, eventL01@2.jpg 2x" alt="이미지">
+                                        </figure>
+                                        <figure class="e2">
+                                            <img src="assets/img/eventS02.jpg" srcset="assets/img/
+                                            eventS02.jpg 1x, eventS02@2 2x" alt="이미지">
+                                        </figure>
+                                        <figure class="e3">
+                                            <img src="assets/img/eventS01.jpg" srcset="assets/img/
+                                            eventS01.jpg 1x, eventS01@2 2x" alt="이미지">
+                                        </figure>
+                                    </div>
+                                    <div class="event_right">
+                                        <figure class="e4">
+                                            <img src="assets/img/eventR01.jpg" srcset="assets/img/
+                                            eventR01.jpg 1x, eventR01@2 2x" alt="이미지">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--//event-->
+                <section id="content3"></section><!--//content3-->
+                <section id="content4"></section><!--//content4-->
+                <section id="content5"></section><!--//content5-->
+                <footer id="footer"></footer><!--//footer-->
+            </body>
+        </html>
